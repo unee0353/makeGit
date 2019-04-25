@@ -1,0 +1,203 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+
+/*reset css*/
+
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    color:inherit;
+    text-decoration:none;
+}
+img{
+    vertical-align:top;
+}
+ul{
+    list-style:none;
+    z-index:99;
+}
+
+/*logo&sns*/
+
+#mainlogo{
+    position:fixed;
+    top:50px;
+    left:50px;
+    z-index:13;
+}
+#mainlogo img{
+    width: 200px;
+    height: auto;
+}
+#sns{
+    font-size:25px;
+    color:#111;
+    position:fixed;
+    top:40px;
+    right:50px;
+    z-index:12
+}
+#sns li{
+    float:left;
+    margin-left:20px;
+}
+#sns li i{
+    opacity:0.5;
+    transition:all 0.5s;
+}
+#sns li:hover i{
+    transform:scale(1.5);
+    opacity:1;
+}
+
+/*menu*/
+
+#menu{
+    position:fixed;
+    top:50%;
+    margin-top:-100px;
+    left:0;
+    z-index:11;
+}
+#menu a{
+    display:block;
+    width:200px;
+    height:60px;
+    font-family:righteous;
+    font-style:14px;
+    border-top:1px solid #333;
+    text-align:right;
+    opacity:0.8;
+    transition:all 0.5s;
+}
+#menu li:hover a, #menu li.on a{
+    font-size:24px;
+    opacity:1;
+}
+#menu li:nth-child(1):hover a, #menu li:nth-child(1).on a{
+    color:#d4164c;
+    border-color:#d4164c;
+}
+#menu li:nth-child(2):hover a, #menu li:nth-child(2).on a {
+    color:#fff;
+    border-color:#fff;
+}
+#menu li:nth-child(3):hover a, #menu li:nth-child(3).on a {
+    color:#ffec6a;
+    border-color:#ffec6a;
+}
+#menu li:nth-child(4):hover a, #menu li:nth-child(4).on a {
+    color:#005a89;
+    border-color:#005a89;
+}
+
+/*container section*/
+
+#container
+section{
+    width:100%;
+    height:700px;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+    background-position:right center;
+    position:relative;
+    overflow:hidden;
+}
+.spring{
+    background-image:url(../image/bg1.jpg);
+}
+.summer{
+    background-image:url(../image/bg2.jpg);
+}
+.autumn{
+    background-image:url(../image/bg3.jpg);
+}
+.winter{
+    background-image:url(../image/bg4.jpg);
+}
+/*
+article
+각 섹션이 top 46% 왼쪽에서 300px;
+p(제목) 폰트 사이즈 50px; 자간 2px;
+*/
+article{
+    position:absolute;
+    top:46%;
+    left:300px;
+    letter-spacing:2px;
+}
+article p{
+    font-size:50px;
+    font-family:righteous;
+    text-transform:uppercase;
+}
+.spring p{
+    color:#d4164c;
+}
+.spring span{
+    color:#111;
+}
+.summer p{
+    color:#fff;
+}
+.summer span{
+    color:#fff;
+}
+.autumn p{
+    color:#fff;
+}
+.autumn span{
+    color:#ffec6a;
+}
+.winter p{
+    color:#005a89;
+}
+.winter span{
+    color:#111;
+}
+
+section img{
+    position:absolute;
+}
+.p11{
+    bottom:20px;
+    right:20px;
+}
+.p12{
+    bottom:-40px;
+    right:130px;
+}.p13{
+    bottom:200px;
+    right:60px;
+}
+.p21{
+    bottom:-480px;
+    right:-180px;
+}
+.p22{
+    bottom:-40px;
+    right:130px;
+}
+.p31{
+    bottom:30px;
+    right:180px;
+}
+.p32{
+    bottom:-270px;
+    right:110px;
+}
+.p33{
+    bottom:-130px;
+    right:-70px;
+}
+.p41{
+    bottom:-120px;
+    right:20px;
+}
+.p42{
+    bottom:-180px;
+    right:0;
+}
